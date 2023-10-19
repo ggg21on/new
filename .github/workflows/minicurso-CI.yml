@@ -10,7 +10,7 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-      - name: build
+      - name: Build
         run: |
           echo Iniciando Build...
-          echo Branch utilizada $({github.ref_name}), Evento $({ github.event_name})
+          echo Branch utilizada $({github.ref_name}), Evento $({ github.event_name}).
