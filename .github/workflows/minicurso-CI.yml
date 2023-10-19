@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+    
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: |
+          echo Iniciando Build...
+          echo Branch utilizada $({github.ref_name}), Evento $({ github.event_name})
